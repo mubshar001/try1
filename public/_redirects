@@ -1,7 +1,4 @@
-# Cloudflare SPA fallback
-/*    /index.html   200
-
-# Canonical HTTPS and domain redirects
-http://leakdetectionleesburg.com/*    https://leakdetectionleesburg.com/:splat    301!
-http://www.leakdetectionleesburg.com/*    https://leakdetectionleesburg.com/:splat    301!
-https://www.leakdetectionleesburg.com/*   https://leakdetectionleesburg.com/:splat    301!
+# Cloudflare Static Asset Redirects
+# Syntax: /source-path /destination-path [status-code]
+/home    /    301
+/index   /    301
