@@ -1,0 +1,76 @@
+{
+  "images": [
+    {
+      "filename": "/images/hero-truck-plumber.svg",
+      "purpose": "Homepage Hero & Brand Commercial Showcase",
+      "style": "High-fidelity commercial daylight photography simulation: white modern service transit van in sunny Florida residential driveway with brand wraps, alloy wheels, lightbar, and palm silhouettes",
+      "alt": "Leesburg Leak Detection modern rapid response service vehicle in a sunny Florida neighborhood with non-invasive acoustic equipment",
+      "dimensions": "1920x1080",
+      "aspectRatio": "16:9",
+      "page": "/"
+    },
+    {
+      "filename": "/images/before-leak-damage.svg",
+      "purpose": "Before Visual - Documentary inspection of sub-slab moisture infiltration",
+      "style": "Photo-realistic interior water damage: wet drywall, bubbling latex paint, warped hardwood floor planks, spreading sub-slab moisture bloom, and digital moisture meter reading",
+      "alt": "Concealed sub-slab residential pipe leak causing foundation moisture saturation and warped flooring before acoustic detection",
+      "dimensions": "800x600",
+      "aspectRatio": "4:3",
+      "page": "/"
+    },
+    {
+      "filename": "/images/after-leak-repair.svg",
+      "purpose": "After Visual - Finished surgical non-invasive spot repair",
+      "style": "Pristine luxury Carrera marble floor, clean white drywall, surgical 1-foot square access point showcasing solid concrete and shiny copper ProPress coupling, verified 65 PSI seal",
+      "alt": "Targeted spot repair and pristine restored marble floor after non-invasive acoustic leak location",
+      "dimensions": "800x600",
+      "aspectRatio": "4:3",
+      "page": "/"
+    },
+    {
+      "filename": "/images/acoustic-sensor.svg",
+      "purpose": "Ultrasonic ground sensor and acoustic correlator for slab and underground pipes",
+      "style": "Digital handheld acoustic console with OLED live FFT frequency waveform display, knurled heavy-duty ground hydrophone resting on concrete slab above pressurized copper line",
+      "alt": "Precision digital acoustic ground microphone inspecting concrete slab for subterranean pipe leaks in Leesburg, Florida",
+      "dimensions": "1200x750",
+      "aspectRatio": "16:10",
+      "page": "/services/slab-leak-detection/"
+    },
+    {
+      "filename": "/images/thermal-imaging.svg",
+      "purpose": "Infrared thermal imaging camera locating temperature differential behind drywall",
+      "style": "Authentic FLIR radiometric ironbow infrared thermography view: thermal plume blooming through wall cavity at 104.8°F, crosshair reticle, temperature scale bar",
+      "alt": "FLIR radiometric infrared thermography scan revealing hidden hot water pipe leak behind interior wall drywall",
+      "dimensions": "1200x750",
+      "aspectRatio": "16:10",
+      "page": "/services/wall-leak-detection/"
+    },
+    {
+      "filename": "/images/pool-detection.svg",
+      "purpose": "Dye testing and pressure transducer inspection for Florida swimming pools",
+      "style": "Crystalline turquoise Florida swimming pool with dancing sunlight caustics, travertine deck coping, skimmer box, and fluorescent leak detection dye stream entering suction fracture",
+      "alt": "Swimming pool return line and structural skimmer fluorochemical dye leak detection in Leesburg FL",
+      "dimensions": "1200x750",
+      "aspectRatio": "16:10",
+      "page": "/services/pool-leak-detection/"
+    },
+    {
+      "filename": "/images/emergency-dispatch.svg",
+      "purpose": "24/7 emergency water cutoff and rapid arrival mobile leak detection unit",
+      "style": "Urgent night dispatch atmosphere: flashing red emergency beacons, wet pavement reflections, bold high-contrast dispatch HUD with confirmed 30-45 minute response",
+      "alt": "24/7 Emergency water leak detection response unit en route to residential home in Leesburg FL",
+      "dimensions": "1200x750",
+      "aspectRatio": "16:10",
+      "page": "/emergency/"
+    },
+    {
+      "filename": "/images/leesburg-map.svg",
+      "purpose": "Interactive service area map covering all Leesburg neighborhoods and Lake County ZIP codes",
+      "style": "Modern hybrid GIS cartography: realistic bathymetry for Lake Harris and Lake Griffin, highway corridors US-27 and US-441 with road badges, Pa Walker Rd HQ marker, and neighborhood pins",
+      "alt": "Geographic service area map showing Leesburg FL Downtown, Briarwood, Woodland Hills, Rolling Meadows, Southside, and Bridgewater",
+      "dimensions": "1200x750",
+      "aspectRatio": "16:10",
+      "page": "/locations/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#38bdf8" />
+      <stop offset="60%" stopColor="#0284c7" />
+      <stop offset="100%" stopColor="#0369a1" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0f172a" />
+  <!-- Water Droplet with Acoustic Triangulation Rings -->
+  <path d="M 32 10 C 32 10 16 32 16 42 A 16 16 0 0 0 48 42 C 48 32 32 10 32 10 Z" fill="url(#dropGrad)" />
+  <circle cx="28" cy="38" r="3" fill="#ffffff" opacity="0.8" />
+  <circle cx="32" cy="42" r="20" fill="none" stroke="#38bdf8" strokeWidth="2" strokeDasharray="3 3" opacity="0.6" />
+</svg>

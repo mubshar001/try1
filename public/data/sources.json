@@ -1,0 +1,44 @@
+{
+  "business": {
+    "name": "Leesburg Leak Detection",
+    "address": "719 Pa Walker Rd, Leesburg, FL 34748",
+    "phone": "+13527038206",
+    "displayPhone": "(352) 703-8206",
+    "email": "Contact@leakdetectionleesburg.com",
+    "hours": "24/7 Available",
+    "emergencyResponseTime": "30-45 minutes",
+    "primaryZip": "34748",
+    "targetZips": ["34748", "34788", "34749", "34789"],
+    "domain": "leakdetectionleesburg.com",
+    "geo": {
+      "latitude": 28.8108,
+      "longitude": -81.8779
+    }
+  },
+  "factualSources": [
+    {
+      "claim": "City of Leesburg Municipal Utilities provides potable water service sourced from the Floridan Aquifer, serving residential and commercial meters across Lake County.",
+      "source": "City of Leesburg Public Works & Water Utilities Department",
+      "url": "https://www.leesburgflorida.gov/departments/water_department.php",
+      "verifiedDate": "2026-09-24"
+    },
+    {
+      "claim": "Lake County Florida features karst limestone topography and porous sandy soils that cause subterranean water leaks to migrate downward rather than pooling on the surface, making electronic acoustic detection essential.",
+      "source": "Florida Geological Survey (FGS) Karst Topography & Aquifer Vulnerability Studies",
+      "url": "https://floridadep.gov/fgs",
+      "verifiedDate": "2026-09-24"
+    },
+    {
+      "claim": "Leesburg municipal water meters are equipped with low-flow indicator dials and digital transmitters that rotate during continuous, unmetered downstream domestic leakage.",
+      "source": "City of Leesburg Utility Meter Operations Manual",
+      "url": "https://www.leesburgflorida.gov/",
+      "verifiedDate": "2026-09-24"
+    },
+    {
+      "claim": "Residential and commercial building codes in Central Florida follow the Florida Building Code Plumbing Volume for slab-on-grade foundation pipe penetrations and pressure testing.",
+      "source": "Florida Building Commission & Lake County Building Division",
+      "url": "https://www.floridabuilding.org/",
+      "verifiedDate": "2026-09-24"
+    }
+  ]
+}

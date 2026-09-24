@@ -1,0 +1,6 @@
+{
+  "name": "Leesburg Leak Detection",
+  "description": "24/7 Non-Invasive Water Leak Detection in Leesburg, FL. Slab leaks, water service lines, high bills, pool, and underground pipe leak detection with rapid 30-45 min emergency arrival.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
