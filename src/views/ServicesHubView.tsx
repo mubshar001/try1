@@ -38,7 +38,7 @@ export const ServicesHubView: React.FC<ServicesHubViewProps> = ({ lang, onNaviga
   ];
 
   return (
-    <div className="bg-slate-950 text-slate-100 py-8">
+    <div className="bg-white text-slate-800 py-8">
       <SchemaJsonLd
         type="service"
         title="All 22 Leak Detection & Plumbing Diagnostics Services in Leesburg, FL"
@@ -48,20 +48,20 @@ export const ServicesHubView: React.FC<ServicesHubViewProps> = ({ lang, onNaviga
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-slate-400">
-          <a href={`${prefix}/`} onClick={(e) => handleLink(e, `${prefix}/`)} className="hover:text-white">Home</a>
+        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-slate-500">
+          <a href={`${prefix}/`} onClick={(e) => handleLink(e, `${prefix}/`)} className="hover:text-sky-600">Home</a>
           <ChevronRight className="w-3.5 h-3.5" />
-          <span className="text-sky-400 font-semibold">Services</span>
+          <span className="text-sky-600 font-semibold">Services</span>
         </nav>
 
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-sky-400 block mb-2">
-            Complete Diagnostic Directory
+          <span className="text-xs font-bold uppercase tracking-widest text-sky-600 block mb-2">
+            — COMPLETE DIAGNOSTIC DIRECTORY —
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4">
-            Our 22 Specialized Leak Detection Services
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-4">
+            Our 22 Specialized <span className="text-sky-600">Leak Detection Services</span>
           </h1>
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             From pressurized copper slab lines and swimming pools to municipal water meter forensics, we utilize non-invasive technology to pinpoint leaks without destruction.
           </p>
         </div>
@@ -72,10 +72,10 @@ export const ServicesHubView: React.FC<ServicesHubViewProps> = ({ lang, onNaviga
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`text-xs sm:text-sm px-4 py-2 rounded-xl font-medium transition-all ${
+              className={`text-xs sm:text-sm px-5 py-2.5 rounded-full font-bold transition-all cursor-pointer ${
                 activeCategory === cat.id
-                  ? 'bg-sky-500 text-slate-950 font-bold shadow-md shadow-sky-500/20'
-                  : 'bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800'
+                  ? 'bg-sky-600 text-white shadow-sm'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
               }`}
             >
               {cat.label}
@@ -88,42 +88,42 @@ export const ServicesHubView: React.FC<ServicesHubViewProps> = ({ lang, onNaviga
           {filteredServices.map((service) => (
             <div
               key={service.slug}
-              className="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-sky-500/50 transition-all flex flex-col justify-between group shadow-lg"
+              className="bg-white rounded-2xl p-6 border border-slate-200/80 hover:border-sky-300 hover:shadow-md transition-all flex flex-col justify-between group shadow-xs"
             >
               <div>
-                <div className="flex items-center justify-between text-xs text-slate-400 mb-2">
-                  <span className="font-mono text-sky-400 font-semibold uppercase">{service.category}</span>
+                <div className="flex items-center justify-between text-xs text-slate-500 mb-2">
+                  <span className="font-mono text-sky-700 font-bold uppercase">{service.category}</span>
                   {service.priority && (
-                    <span className="text-emerald-400 font-bold">Top Priority</span>
+                    <span className="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">Top Priority</span>
                   )}
                 </div>
-                <h2 className="text-xl font-bold text-white mb-2 group-hover:text-sky-400 transition-colors">
+                <h2 className="text-xl font-extrabold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
                   {service.name}
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                   {service.shortDesc}
                 </p>
-                <ul className="space-y-1.5 mb-6 text-xs text-slate-400">
+                <ul className="space-y-1.5 mb-6 text-xs text-slate-500">
                   {service.subServices.slice(0, 3).map((sub, i) => (
                     <li key={i} className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-sky-600 shrink-0" />
                       <span className="truncate">{sub}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="pt-4 border-t border-slate-800 flex items-center justify-between">
+              <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                 <a
                   href={`${prefix}/services/${service.slug}/`}
                   onClick={(e) => handleLink(e, `${prefix}/services/${service.slug}/`)}
-                  className="text-xs font-bold text-sky-400 hover:underline inline-flex items-center gap-1"
+                  className="text-xs font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1"
                 >
                   <span>Full Service Details</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </a>
                 <a
                   href="tel:+13527038206"
-                  className="text-xs bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-3 py-1.5 rounded-lg transition-colors"
+                  className="text-xs bg-amber-400 hover:bg-amber-300 text-slate-950 font-black px-4 py-2 rounded-full transition-colors shadow-2xs"
                 >
                   Call Now
                 </a>

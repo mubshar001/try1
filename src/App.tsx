@@ -200,7 +200,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-950 font-sans selection:bg-sky-500 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-white text-slate-800 font-sans selection:bg-amber-400 selection:text-slate-900">
       <Navbar
         currentPath={currentPath}
         lang={lang}

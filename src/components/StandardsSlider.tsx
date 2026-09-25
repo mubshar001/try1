@@ -6,12 +6,12 @@ const ICONS = [ShieldCheck, Award, Wrench, Clock, Zap, CheckCircle2];
 
 export const StandardsSlider: React.FC = () => {
   return (
-    <section className="py-14 bg-slate-900 border-y border-slate-800 text-white overflow-hidden">
+    <section className="py-14 bg-slate-50/70 border-y border-slate-100 text-slate-800 overflow-hidden rounded-3xl mb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-2">
+        <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 mb-2">
           Our Service Standards
         </h2>
-        <p className="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto">
+        <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
           Certified leak detection protocols, state licensed master plumbers, and verified equipment calibration serving Leesburg and Lake County.
         </p>
       </div>
@@ -23,26 +23,26 @@ export const StandardsSlider: React.FC = () => {
             return (
               <div
                 key={`${std.id}-${idx}`}
-                className="w-72 sm:w-80 shrink-0 bg-slate-800/80 rounded-xl p-5 border border-slate-700/60 shadow-md backdrop-blur-sm flex flex-col justify-between"
+                className="w-72 sm:w-80 shrink-0 bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex flex-col justify-between"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-400/20 flex items-center justify-center text-sky-400 shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center shrink-0">
                     <IconComponent className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-mono tracking-wider text-sky-400 block font-semibold">
+                    <span className="text-xs font-mono tracking-wider text-sky-700 block font-bold">
                       {std.badgeCode}
                     </span>
-                    <span className="text-xs text-slate-400 block truncate">
+                    <span className="text-xs text-slate-500 block truncate">
                       {std.verifiedOrg}
                     </span>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-white leading-snug mb-1">
+                  <h3 className="text-sm font-bold text-slate-900 leading-snug mb-1">
                     {std.title}
                   </h3>
-                  <p className="text-xs text-slate-400 leading-relaxed">
+                  <p className="text-xs text-slate-500 leading-relaxed">
                     {std.subtitle}
                   </p>
                 </div>

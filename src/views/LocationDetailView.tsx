@@ -50,7 +50,7 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
   ];
 
   return (
-    <div className="bg-slate-950 text-slate-100 py-8">
+    <div className="bg-white text-slate-800 py-8">
       <SchemaJsonLd
         type="location"
         title={`Leak Detection in ${neighborhood.name}, Leesburg, FL | 24/7 Water & Slab Specialists`}
@@ -62,48 +62,48 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Breadcrumbs */}
-        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-slate-400">
-          <a href={`${prefix}/`} onClick={(e) => handleLink(e, `${prefix}/`)} className="hover:text-white">Home</a>
+        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-slate-500">
+          <a href={`${prefix}/`} onClick={(e) => handleLink(e, `${prefix}/`)} className="hover:text-sky-600">Home</a>
           <ChevronRight className="w-3.5 h-3.5" />
-          <a href={`${prefix}/locations/`} onClick={(e) => handleLink(e, `${prefix}/locations/`)} className="hover:text-white">Locations</a>
+          <a href={`${prefix}/locations/`} onClick={(e) => handleLink(e, `${prefix}/locations/`)} className="hover:text-sky-600">Locations</a>
           <ChevronRight className="w-3.5 h-3.5" />
-          <span className="text-sky-400 font-semibold">{neighborhood.name}</span>
+          <span className="text-sky-600 font-semibold">{neighborhood.name}</span>
         </nav>
 
         {/* Hero */}
-        <div className="bg-slate-900 rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-2xl mb-12">
+        <div className="bg-slate-50/70 rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-xs mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xs font-bold font-mono">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 text-xs font-bold font-mono">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>LEESBURG, FL · ZIP {neighborhood.zip}</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 Leak Detection in {neighborhood.name}, Leesburg, FL
               </h1>
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                24/7 non-invasive acoustic and thermal water leak detection serving residential and commercial properties in {neighborhood.name}. Confirmed emergency arrival in 30-45 minutes.
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+                24/7 non-invasive acoustic and thermal water leak detection serving residential and commercial properties in {neighborhood.name}. Confirmed emergency arrival in 30-45 minutes (call to confirm availability).
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <a
                   href="tel:+13527038206"
-                  className="inline-flex items-center justify-center gap-2.5 bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold px-8 py-4 rounded-xl text-base shadow-lg shadow-sky-500/20 transition-all"
+                  className="inline-flex items-center justify-center gap-2.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold px-8 py-4 rounded-full text-base shadow-sm transition-all hover:scale-[1.02]"
                 >
-                  <Phone className="w-5 h-5 fill-current" />
+                  <Phone className="w-5 h-5 fill-slate-950" />
                   <span>Call (352) 703-8206</span>
                 </a>
                 <a
                   href={`${prefix}/emergency/`}
                   onClick={(e) => handleLink(e, `${prefix}/emergency/`)}
-                  className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-4 rounded-xl text-sm border border-slate-700"
+                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-800 font-bold px-6 py-4 rounded-full text-sm border border-slate-200 shadow-2xs"
                 >
-                  <Clock className="w-4 h-4 text-emerald-400" />
+                  <Clock className="w-4 h-4 text-emerald-600" />
                   <span>24/7 Dispatch (30-45 Min)</span>
                 </a>
               </div>
             </div>
             <div className="lg:col-span-5">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-slate-800 shadow-lg">
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200 shadow-md">
                 <VisualAsset
                   type="map"
                   alt={`Map and service presence in ${neighborhood.name}, Leesburg FL`}
@@ -117,32 +117,32 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
         {/* Local Overview & Context */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           <div className="lg:col-span-8 space-y-8">
-            <section className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
-              <h2 className="text-2xl font-bold text-white mb-4">
+            <section className="bg-slate-50/70 rounded-3xl p-8 border border-slate-200/80 shadow-2xs">
+              <h2 className="text-2xl font-extrabold text-slate-900 mb-4">
                 Neighborhood Plumbing Architecture & Geological Overview
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
                 {neighborhood.description}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                <div className="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
-                  <h3 className="font-bold text-white text-sm mb-2">Key Architectural Features:</h3>
-                  <ul className="space-y-1.5 text-xs text-slate-300">
+                <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-2xs">
+                  <h3 className="font-extrabold text-slate-900 text-sm mb-2">Key Architectural Features:</h3>
+                  <ul className="space-y-1.5 text-xs text-slate-600">
                     {neighborhood.keyFeatures.map((kf, i) => (
                       <li key={i} className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-sky-600 shrink-0" />
                         <span>{kf}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
-                  <h3 className="font-bold text-white text-sm mb-2">Local Plumbing Risks:</h3>
-                  <ul className="space-y-1.5 text-xs text-slate-300">
+                <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-2xs">
+                  <h3 className="font-extrabold text-slate-900 text-sm mb-2">Local Plumbing Risks:</h3>
+                  <ul className="space-y-1.5 text-xs text-slate-600">
                     {neighborhood.localRisks.map((lr, i) => (
                       <li key={i} className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
                         <span>{lr}</span>
                       </li>
                     ))}
@@ -152,8 +152,8 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
             </section>
 
             {/* Top 10 Services Available in this Neighborhood */}
-            <section className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
-              <h2 className="text-2xl font-bold text-white mb-6">
+            <section className="bg-slate-50/70 rounded-3xl p-8 border border-slate-200/80 shadow-2xs">
+              <h2 className="text-2xl font-extrabold text-slate-900 mb-6">
                 Priority Leak Detection Services Available in {neighborhood.name}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -162,17 +162,17 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
                     key={s.slug}
                     href={`${prefix}/${neighborhood.slug}-${s.slug}/`}
                     onClick={(e) => handleLink(e, `${prefix}/${neighborhood.slug}-${s.slug}/`)}
-                    className="bg-slate-800/70 hover:bg-slate-800 p-4 rounded-xl border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between group"
+                    className="bg-white hover:bg-sky-50/40 p-5 rounded-2xl border border-slate-200/80 hover:border-sky-300 transition-all flex flex-col justify-between group shadow-2xs"
                   >
                     <div>
-                      <h3 className="font-bold text-white text-sm mb-1 group-hover:text-sky-400 transition-colors">
+                      <h3 className="font-extrabold text-slate-900 text-sm mb-1 group-hover:text-sky-600 transition-colors">
                         {s.name} in {neighborhood.name}
                       </h3>
-                      <p className="text-xs text-slate-400 line-clamp-2 mb-3">
+                      <p className="text-xs text-slate-500 line-clamp-2 mb-3">
                         {s.shortDesc}
                       </p>
                     </div>
-                    <span className="text-xs text-sky-400 font-semibold inline-flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                    <span className="text-xs text-sky-600 font-bold inline-flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
                       <span>View Combo Guide</span>
                       <ArrowRight className="w-3 h-3" />
                     </span>
@@ -182,23 +182,23 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
             </section>
 
             {/* Interactive Map Component */}
-            <section className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
-              <h2 className="text-2xl font-bold text-white mb-4">
+            <section className="bg-slate-50/70 rounded-3xl p-8 border border-slate-200/80 shadow-2xs">
+              <h2 className="text-2xl font-extrabold text-slate-900 mb-4">
                 Dispatch Proximity & Map for {neighborhood.name}
               </h2>
               <InteractiveMap activeNeighborhoodSlug={neighborhood.slug} />
             </section>
 
             {/* FAQs */}
-            <section className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
-              <h2 className="text-2xl font-bold text-white mb-4">
+            <section className="bg-slate-50/70 rounded-3xl p-8 border border-slate-200/80 shadow-2xs">
+              <h2 className="text-2xl font-extrabold text-slate-900 mb-4">
                 Frequently Asked Questions for {neighborhood.name}
               </h2>
               <div className="space-y-4">
                 {locationFaqs.map((faq, i) => (
-                  <div key={i} className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
-                    <h3 className="text-sm font-bold text-white mb-1.5">{faq.q}</h3>
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{faq.a}</p>
+                  <div key={i} className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-2xs">
+                    <h3 className="text-sm font-extrabold text-slate-900 mb-1.5">{faq.q}</h3>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{faq.a}</p>
                   </div>
                 ))}
               </div>
@@ -207,28 +207,28 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
 
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-6">
-            <div className="bg-sky-500 rounded-2xl p-6 text-slate-950 text-center shadow-xl">
-              <span className="text-xs font-bold uppercase tracking-wider block mb-1">
+            <div className="bg-[#0b1f3c] text-white rounded-3xl p-6 sm:p-8 text-center shadow-lg">
+              <span className="text-xs font-bold uppercase tracking-wider text-sky-400 block mb-1">
                 24/7 Dispatch
               </span>
               <h3 className="text-xl font-extrabold mb-2">
                 Need Fast Help in {neighborhood.name}?
               </h3>
-              <p className="text-xs font-medium text-slate-900 mb-4">
-                Confirmed arrival within 30 to 45 minutes.
+              <p className="text-xs font-medium text-slate-300 mb-4">
+                Confirmed arrival within 30 to 45 minutes (call to confirm availability).
               </p>
               <a
                 href="tel:+13527038206"
-                className="w-full inline-flex items-center justify-center gap-2 bg-slate-950 text-white font-bold py-3.5 px-4 rounded-xl text-sm hover:bg-slate-900 transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black py-3.5 px-4 rounded-full text-sm transition-all hover:scale-[1.02]"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4 fill-slate-950" />
                 <span>Call (352) 703-8206</span>
               </a>
             </div>
 
             {/* Other Neighborhoods */}
-            <div className="bg-slate-900 rounded-2xl p-6 border border-slate-800">
-              <h3 className="text-sm font-bold text-white mb-3">
+            <div className="bg-slate-50/70 rounded-3xl p-6 border border-slate-200/80 shadow-2xs">
+              <h3 className="text-sm font-extrabold text-slate-900 mb-3">
                 Other Leesburg Service Areas:
               </h3>
               <ul className="space-y-2 text-xs">
@@ -237,10 +237,10 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
                     <a
                       href={`${prefix}/locations/${on.slug}/`}
                       onClick={(e) => handleLink(e, `${prefix}/locations/${on.slug}/`)}
-                      className="text-slate-300 hover:text-sky-400 flex items-center justify-between py-1 border-b border-slate-800"
+                      className="text-slate-600 hover:text-sky-600 flex items-center justify-between py-1.5 border-b border-slate-200/60 font-medium"
                     >
                       <span>{on.name}</span>
-                      <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                      <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
                     </a>
                   </li>
                 ))}
@@ -248,14 +248,14 @@ export const LocationDetailView: React.FC<LocationDetailViewProps> = ({
             </div>
 
             {/* Target ZIP reference */}
-            <div className="bg-slate-900 rounded-2xl p-6 border border-slate-800">
-              <h3 className="text-sm font-bold text-white mb-2">
+            <div className="bg-slate-50/70 rounded-3xl p-6 border border-slate-200/80 shadow-2xs">
+              <h3 className="text-sm font-extrabold text-slate-900 mb-2">
                 Primary ZIP Code:
               </h3>
               <a
                 href={`${prefix}/zip/${neighborhood.zip}/`}
                 onClick={(e) => handleLink(e, `${prefix}/zip/${neighborhood.zip}/`)}
-                className="text-sky-400 hover:underline text-xs font-mono font-bold block"
+                className="text-sky-700 hover:underline text-xs font-mono font-bold block"
               >
                 View Full Coverage for ZIP {neighborhood.zip} →
               </a>
